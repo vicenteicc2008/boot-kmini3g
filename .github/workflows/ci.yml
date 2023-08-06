@@ -35,3 +35,7 @@ jobs:
           ./AIK-Linux/unpackimg.sh ./boot.img
           cp ./lk.bin ./AIK-Linux/split_img/boot.img-kernel
           ./AIK-Linux/repackimg.sh --original
+      - uses: actions/upload-artifact@v3
+        with:
+          name: S5 Mini
+          path: ./AIK-Linux/image-new.img
