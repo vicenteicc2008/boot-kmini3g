@@ -32,6 +32,6 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          ./AIK-Linux/unpackimg.sh ./home/runner/work/boot-kmini3g/boot.img
-          cp /home/runner/work/boot-kmini3g/lk.bin /home/runner/work/boot-kmini3g/AIK-Linux-v3.8-ALL/AIK-Linux/split_img/boot.img-kernel
+          ./AIK-Linux/unpackimg.sh ./boot.img
+          cp ./lk.bin ./AIK-Linux/split_img/boot.img-kernel
           ./AIK-Linux/repackimg.sh --original
